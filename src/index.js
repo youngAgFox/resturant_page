@@ -21,6 +21,19 @@ bodyContent.append(tabs);
 bodyContent.append(content);
 
 loadHome(content);
-homeTab.addEventListener("click", () => loadHome(content, tabs));
-contactTab.addEventListener("click", () => loadContact(content, tabs));
-menuTab.addEventListener("click", () => loadMenu(content, tabs));
+homeTab.addEventListener("click", () => {
+    removeAll(content);
+    loadHome(content, tabs)
+});
+contactTab.addEventListener("click", () => {
+    removeAll(content);
+    loadContact(content, tabs)
+});
+menuTab.addEventListener("click", () => {
+    removeAll(content);
+    loadMenu(content, tabs)
+});
+
+function removeAll(element) {
+    while (element.hasChildNodes()) element.removeChild(element.lastChild);
+}
