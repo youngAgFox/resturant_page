@@ -3,7 +3,7 @@
  * 
  * @param {HTMLElement} element 
  */
-export function load(element) {
+export function load(element, tabs) {
     for (const c of element.children) {
         c.remove();
     }
