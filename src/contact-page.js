@@ -1,4 +1,5 @@
 //ts-check
+import fan from './fan.gif';
 /**
  * 
  * @param {HTMLElement} element 

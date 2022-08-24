@@ -1,5 +1,5 @@
-import Icon from './kneading.gif'
 //ts-check
+import Icon from './pianist.gif'
 /**
  * 
  * @param {HTMLElement} element 
