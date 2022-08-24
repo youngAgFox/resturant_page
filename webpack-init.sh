@@ -1,6 +1,6 @@
 #!/bin/bash
 #setup the basic webpack stuff and make the std dirs
-npm init
+npm init -y
 npm install webpack webpack-cli --save-dev
 mkdir src
 mkdir dist
