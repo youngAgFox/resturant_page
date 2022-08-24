@@ -5,9 +5,7 @@ import Icon from './kneading.gif'
  * @param {HTMLElement} element 
  */
 export function load(element, tabs) {
-    for (const c of element.children) {
-        c.remove();
-    }
+    while (element.hasChildNodes()) element.removeChild(element.lastChild);
     const about = document.createElement("div");
     about.innerText = 'Home page about';
     element.append(about);

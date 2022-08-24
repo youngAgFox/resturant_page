@@ -21,6 +21,6 @@ bodyContent.append(tabs);
 bodyContent.append(content);
 
 loadHome(content);
-homeTab.addEventListener("click", () => loadHome(content));
-contactTab.addEventListener("click", () => loadContact(content));
-menuTab.addEventListener("click", () => loadMenu(content));
+homeTab.addEventListener("click", () => loadHome(content, tabs));
+contactTab.addEventListener("click", () => loadContact(content, tabs));
+menuTab.addEventListener("click", () => loadMenu(content, tabs));
